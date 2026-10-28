@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>Spese - Condominio Viale Trisorio Liuzzi H1</title>
+<style>
+:root{--bg:#f3f5f9;--card:#fff;--tx:#1b2430;--mut:#667085;--br:#e4e8ef;--ac:#2f5bea;--ac2:#eaf0ff;--hd1:#1f3a8a;--hd2:#2f5bea}
+@media (prefers-color-scheme:dark){:root{--bg:#0e131a;--card:#161d27;--tx:#e8edf4;--mut:#93a0b3;--br:#263041;--ac:#8aa9ff;--ac2:#1c2946;--hd1:#16264f;--hd2:#2a4bb3}}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 "Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif}
+header{background:linear-gradient(135deg,var(--hd1),var(--hd2));color:#fff;padding:28px 20px 70px}
+.wrap{max-width:1150px;margin:0 auto}
+header h1{margin:0;font-size:1.5rem;font-weight:650}
+header p{margin:6px 0 0;opacity:.85;font-size:.92rem}
+main{margin-top:-48px;padding:0 16px 30px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:14px}
+.stat{background:var(--card);border:1px solid var(--br);border-radius:14px;padding:14px 16px;box-shadow:0 4px 14px rgba(0,0,0,.06)}
+.stat span{display:block;color:var(--mut);font-size:.78rem;text-transform:uppercase;letter-spacing:.04em}
+.stat b{font-size:1.45rem}
+.filtri{background:var(--card);border:1px solid var(--br);border-radius:14px;padding:14px 16px;margin-bottom:14px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;align-items:end}
+.filtri label{display:block;font-size:.76rem;color:var(--mut);margin-bottom:3px}
+.filtri input,.filtri select{width:100%;padding:9px 10px;border:1px solid var(--br);border-radius:9px;background:var(--bg);color:var(--tx);font:inherit}
+.filtri input:focus,.filtri select:focus{outline:2px solid var(--ac);border-color:transparent}
+button{padding:9px 14px;border:0;border-radius:9px;background:var(--ac2);color:var(--ac);font:inherit;font-weight:600;cursor:pointer}
+.box{background:var(--card);border:1px solid var(--br);border-radius:14px;overflow-x:auto;box-shadow:0 4px 14px rgba(0,0,0,.05)}
+table{border-collapse:collapse;width:100%;min-width:760px}
+th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--br);vertical-align:top}
+th{font-size:.76rem;text-transform:uppercase;letter-spacing:.04em;color:var(--mut);white-space:nowrap}
+th[data-k]{cursor:pointer;user-select:none}
+th[data-k]:hover{color:var(--ac)}
+tbody tr:hover{background:var(--ac2)}
+td.imp,th.imp{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.doc{display:inline-flex;gap:3px;align-items:center;margin:2px 8px 2px 0;white-space:nowrap}
+a.pdf,a.dl{display:inline-block;padding:4px 10px;border-radius:8px;background:var(--ac2);color:var(--ac);font-weight:600;text-decoration:none}
+a.dl{padding:4px 8px}
+.vuoto{padding:30px;text-align:center;color:var(--mut)}
+footer{text-align:center;color:var(--mut);font-size:.8rem;padding:10px 0 30px}
+</style></head>
+<body>
+<header><div class="wrap"><h1>Condominio Viale Trisorio Liuzzi H1</h1><p>Documentazione delle spese &middot; SFERO ETS</p></div></header>
+<main><div class="wrap">
+<div class="stats">
+<div class="stat"><span>Totale spese</span><b id="tot">0</b></div>
+<div class="stat"><span>Documenti</span><b id="cnt">0</b></div>
+<div class="stat"><span>Fornitori</span><b id="nforn">0</b></div>
+</div>
+<div class="filtri">
+<div><label for="q">Cerca</label><input id="q" type="search" placeholder="Causale, periodo..."></div>
+<div><label for="anno">Anno</label><select id="anno"><option value="">Tutti gli anni</option><option value="2026">2026</option></select></div>
+<div><label for="mese">Mese</label><select id="mese"><option value="">Tutti i mesi</option><option value="01">Gennaio</option><option value="02">Febbraio</option><option value="03">Marzo</option><option value="04">Aprile</option><option value="05">Maggio</option><option value="06">Giugno</option><option value="07">Luglio</option><option value="08">Agosto</option><option value="09">Settembre</option><option value="10">Ottobre</option><option value="11">Novembre</option><option value="12">Dicembre</option></select></div>
+<div><label for="forn">Fornitore</label><select id="forn"><option value="">Tutti</option><option value="Acquedotto Pugliese (AQP)">Acquedotto Pugliese (AQP)</option><option value="Denominazione: S.P.A.VI srl">Denominazione: S.P.A.VI srl</option><option value="DIFINO S.R.L.S.">DIFINO S.R.L.S.</option></select></div>
+<div><label for="min">Importo da (&euro;)</label><input id="min" type="number" step="0.01" min="0" placeholder="0"></div>
+<div><label for="max">Importo fino a (&euro;)</label><input id="max" type="number" step="0.01" min="0" placeholder="qualsiasi"></div>
+<div><button type="button" id="reset">Azzera filtri</button></div>
+</div>
+<div class="box"><table>
+<thead><tr><th data-k="prog">N.</th><th data-k="data">Data</th><th data-k="forn">Fornitore</th><th>Causale</th><th data-k="per">Periodo</th><th class="imp" data-k="imp" data-t="n">Importo</th><th>Documento</th></tr></thead>
+<tbody>
+<tr data-prog="g8rate" data-data="2026-04-10" data-forn="Acquedotto Pugliese (AQP)" data-per="maggio 2026" data-imp="243.55"><td>g8rate</td><td>10/04/2026</td><td>Acquedotto Pugliese (AQP)</td><td>Il Direttore</td><td>maggio 2026</td><td class="imp">243,55 €</td><td><span class="doc"><a class="pdf" href="pdf/h1-g8rate.pdf" target="_blank" rel="noopener noreferrer">Apri PDF</a><a class="dl" href="pdf/h1-g8rate.pdf" download title="Scarica">&#8595;</a></span></td></tr>
+<tr data-prog="g6" data-data="2026-03-30" data-forn="DIFINO S.R.L.S." data-per="marzo 2026" data-imp="165.20"><td>g6</td><td>30/03/2026</td><td>DIFINO S.R.L.S.</td><td>pagamento A</td><td>marzo 2026</td><td class="imp">165,20 €</td><td><span class="doc"><a class="pdf" href="pdf/h1-g6.pdf" target="_blank" rel="noopener noreferrer">Apri PDF</a><a class="dl" href="pdf/h1-g6.pdf" download title="Scarica">&#8595;</a></span></td></tr>
+<tr data-prog="g9" data-data="2026-03-27" data-forn="Denominazione: S.P.A.VI srl" data-per="marzo 2026" data-imp="65.00"><td>g9</td><td>27/03/2026</td><td>Denominazione: S.P.A.VI srl</td><td>Servizio carrellata del mese di marzo 2026</td><td>marzo 2026</td><td class="imp">65,00 €</td><td><span class="doc"><a class="pdf" href="pdf/h1-g9.pdf" target="_blank" rel="noopener noreferrer">Apri PDF</a><a class="dl" href="pdf/h1-g9.pdf" download title="Scarica">&#8595;</a></span></td></tr>
+<tr data-prog="g8" data-data="2026-03-10" data-forn="Acquedotto Pugliese (AQP)" data-per="gennaio 2026" data-imp="1314.64"><td>g8</td><td>10/03/2026</td><td>Acquedotto Pugliese (AQP)</td><td>del pagamento</td><td>gennaio 2026</td><td class="imp">1.314,64 €</td><td><span class="doc"><a class="pdf" href="pdf/h1-g8.pdf" target="_blank" rel="noopener noreferrer">Apri PDF</a><a class="dl" href="pdf/h1-g8.pdf" download title="Scarica">&#8595;</a></span></td></tr>
+</tbody></table>
+<div class="vuoto" id="vuoto" hidden>Nessun documento corrisponde ai filtri.</div></div>
+</div></main>
+<footer>Aggiornato il 28/10/2026 01:13</footer>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+var tb=document.querySelector('tbody'),rows=[].slice.call(tb.querySelectorAll('tr'));
+var ids=['q','anno','mese','forn','min','max'],dir={},KEY='flt:'+location.pathname;
+var eur=function(n){return n.toLocaleString('it-IT',{style:'currency',currency:'EUR'})};
+function num(v){var x=parseFloat(v);return isNaN(x)?null:x}
+function annoCorrente(){var cy=String(new Date().getFullYear()),o=[].slice.call($('anno').options).map(function(x){return x.value});
+if(o.indexOf(cy)>-1)return cy;return o.length>1?o[1]:''}
+function salva(){try{var v={};ids.forEach(function(i){v[i]=$(i).value});sessionStorage.setItem(KEY,JSON.stringify(v))}catch(e){}}
+function ripristina(){var ok=false;try{var s=sessionStorage.getItem(KEY);if(s){var v=JSON.parse(s);ids.forEach(function(i){if(v[i]!==undefined)$(i).value=v[i]});ok=true}}catch(e){}
+if(!ok)$('anno').value=annoCorrente()}
+function apply(){
+var q=$('q').value.trim().toLowerCase(),an=$('anno').value,me=$('mese').value,fo=$('forn').value,mn=num($('min').value),mx=num($('max').value),s=0,n=0,set={};
+rows.forEach(function(r){var d=r.dataset,imp=parseFloat(d.imp)||0,y=d.data?d.data.substr(0,4):'',m=d.data?d.data.substr(5,2):'';
+var ok=(!q||r.textContent.toLowerCase().indexOf(q)>-1)&&(!an||y===an)&&(!me||m===me)&&(!fo||d.forn===fo)&&(mn===null||imp>=mn)&&(mx===null||imp<=mx);
+r.hidden=!ok;if(ok){s+=imp;n++;set[d.forn]=1}});
+$('tot').textContent=eur(s);$('cnt').textContent=n;$('nforn').textContent=Object.keys(set).length;$('vuoto').hidden=n>0;salva()}
+ids.forEach(function(i){$(i).addEventListener('input',apply);$(i).addEventListener('change',apply)});
+$('reset').addEventListener('click',function(){ids.forEach(function(i){$(i).value=''});$('anno').value=annoCorrente();apply()});
+[].forEach.call(document.querySelectorAll('th[data-k]'),function(th){th.addEventListener('click',function(){
+var k=th.dataset.k,isn=th.dataset.t==='n';dir[k]=!dir[k];
+rows.sort(function(a,b){var x=a.dataset[k]||'',y=b.dataset[k]||'';
+if(isn){x=parseFloat(x)||0;y=parseFloat(y)||0;return dir[k]?x-y:y-x}
+return dir[k]?x.localeCompare(y,'it',{numeric:true}):y.localeCompare(x,'it',{numeric:true})});
+rows.forEach(function(r){tb.appendChild(r)})})});
+[].forEach.call(document.querySelectorAll('a.pdf'),function(a){a.addEventListener('click',function(e){
+e.preventDefault();var w=window.open(a.href,'_blank');if(!w){location.href=a.href}})});
+ripristina();apply()})();
+</script>
+</body></html>
